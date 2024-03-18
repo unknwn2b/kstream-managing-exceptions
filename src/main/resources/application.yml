@@ -1,0 +1,25 @@
+spring:
+  application.name: POC
+  kafka:
+    streams:
+      application-id: first-app
+      bootstrap-servers:
+        - localhost:9092
+      properties:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+
+custom:
+  kafka:
+    streams:
+      topic:
+        # Topic to consume by the stream
+        input.name: inputTopic
+        # Topic to produce by the stream
+        output.name: outputTopic
+        # Topic name for retry DLQ
+        dlq.retry.name: retryTopic
+        # List of all values of ApplicativeErrors to publish in the retry topic
+        dlq.retry.listApplicativeErrors: EXAMPLE_ERROR
+        # Generic DLQ Topic Name
+        dlq.main.name: genericDlqTopic

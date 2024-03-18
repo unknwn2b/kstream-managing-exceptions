@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+	<Loggers>
+		<AsyncRoot level="info">
+			<AppenderRef ref="CONSOLE" />
+		</AsyncRoot>
+		<!-- APP -->
+		<Logger name="com.example.kstream" level="debug" />
+
+		<!-- libs -->
+		<Logger name="org.springframework" level="info" />
+		<Logger name="org.springframework.security" level="info" />
+		<Logger name="org.apache.kafka" level="info" />
+		<Logger name="org.springframework.kafka" level="debug" />
+		<Logger name="org.springframework.kafka.transaction" level="trace" />
+	</Loggers>
+</Configuration>
