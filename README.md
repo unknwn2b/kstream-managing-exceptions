@@ -1,7 +1,7 @@
 # POC Springboot Kafka Stream | Managing Application Exceptions
 
 ## Description:
-This POC proposes a solution for managing application errors in the context of a Kafka stream.
+This POC proposes a solution for managing application exceptions in the context of a Kafka stream.
 
 # How to launch:
 **Install kafka with 4 defaults topics :** 
