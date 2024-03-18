@@ -1,4 +1,4 @@
-# POC Springboot Kafka Stream | Managing Applicative Exceptions
+# POC Springboot Kafka Stream | Managing Application Exceptions
 
 ## Description:
 This POC proposes a solution for managing application errors in the context of a Kafka stream.
